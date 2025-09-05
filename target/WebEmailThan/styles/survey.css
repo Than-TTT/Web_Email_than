@@ -1,0 +1,112 @@
+/* The styles for the elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 85%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(19, 173, 173);
+}
+.container {
+  background: white;
+  padding: 2em;
+  border-radius: 12px; /* bo góc */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* đổ bóng */
+  width: 400px;
+  text-align: center;
+}
+legend {
+  font-size: 130%;
+  color: rgb(112, 28, 28);
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+h1 {
+  font-size: 160%;
+  color: teal;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 130%;
+  color: teal;
+  margin-bottom: 0.5em;
+}
+label {
+  float: left;
+  width: 7em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"] {
+  /* An attribute selector */
+  width: 15em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+span {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+br {
+  clear: both;
+}
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2 em;
+}
+.radio {
+  display: flex;
+  flex-direction: column; /* xếp dọc */
+  gap: 0.5em; /* khoảng cách giữa các lựa chọn */
+}
+
+.radio label {
+  display: flex;
+  align-items: center; /* căn nút radio với chữ cùng hàng */
+  gap: 0.4em; /* khoảng cách giữa nút chọn và chữ */
+  cursor: pointer; /* click vào chữ cũng chọn được */
+  width: 20em;
+  white-space: nowrap;
+}
+.checkbox {
+  display: flex;
+  flex-direction: column; /* xếp dọc */
+  gap: 0.5em;
+  align-items: flex-start; /* căn tất cả về bên trái */
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center; /* nút và chữ thẳng hàng */
+  gap: 0.5em;
+  cursor: pointer;
+  width: 100%; /* label chiếm toàn bộ chiều ngang */
+  justify-content: flex-start; /* chữ + nút nằm bên trái */
+}
+
+/* The styles for the classes */
+.pad_top {
+  padding-top: 0.25em;
+}
+.margin_left {
+  margin-left: 0.5em;
+}
+
+/* The styles for a table */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 0.5em;
+}
+.right {
+  text-align: right;
+}
